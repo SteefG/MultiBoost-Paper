@@ -157,5 +157,5 @@ class MultiBoostClassifier(BaseEstimator, ClassifierMixin):
             classifiedMatrix.append(self.classifications_[i].predict(X))
 
         classifiedMatrix = np.array(classifiedMatrix).T
-
-        return self._getHeaviestClass(classifiedMatrix, self.betas_)
+        betaTransform = -np.log(self.betas_)
+        return self._getHeaviestClass(classifiedMatrix, betaTransform)
