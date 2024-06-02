@@ -1,5 +1,5 @@
 # MultiBoost-Paper
-Implements and Evaluates the MultiBoost algorithm proposed by Webb (2000). It is designed with the sklearn API.
+Implements and evaluates the MultiBoost algorithm proposed by Webb (2000). It is designed with the sklearn API (Buitinck et al., 2013).
 
 ## References:
 
