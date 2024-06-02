@@ -1,7 +1,7 @@
 # MultiBoost-Paper
-Implements and evaluates the MultiBoost algorithm proposed by Webb (2000). It is designed with the sklearn API (Buitinck et al., 2013).
+Implements and evaluates the MultiBoost algorithm proposed by Webb (2000) in Python. It is designed with the sklearn API (Buitinck et al., 2013).
 
-## References:
+### References:
 
 Webb, G. I. (2000). Multiboosting: A technique for combining boosting and wagging. Machine learning, 40, 159-196.
 
