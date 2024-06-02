@@ -1,7 +1,7 @@
 # MultiBoost-Paper
 Implements and Evaluates the MultiBoost algorithm proposed by Webb (2000). It is designed with the sklearn API.
 
-References:
+## References:
 
 Webb, G. I. (2000). Multiboosting: A technique for combining boosting and wagging. Machine learning, 40, 159-196.
 
