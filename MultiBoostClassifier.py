@@ -159,3 +159,17 @@ class MultiBoostClassifier(BaseEstimator, ClassifierMixin):
         classifiedMatrix = np.array(classifiedMatrix).T
         betaTransform = -np.log(self.betas_)
         return self._getHeaviestClass(classifiedMatrix, betaTransform)
+    
+    def predict_proba(self, X): #Adapted from sklearn documentation
+        check_is_fitted(self)
+        X = check_array(X)
+        self.size_ = X.shape[0]
+        proba = np.zeros((self.size_, len(self.classes_)))
+        betaTransform = -np.log(self.betas_) #As was described in Webb (2000)
+
+        for i in range(self.T): #Find probabilities of each class
+            proba += betaTransform[i] * self.classifications_[i].predict_proba(X)
+
+        proba = np.exp(proba) #Transform back to probability space
+        proba = proba / proba.sum(axis=1, keepdims=True)
+        return proba
