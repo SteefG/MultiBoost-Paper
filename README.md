@@ -3,8 +3,8 @@ Implements and evaluates the MultiBoost algorithm proposed by Webb (2000) in Pyt
 
 All code in this project is my own work unless stated otherwise.
 
-Heart Disease dataset (HD) source: https://www.kaggle.com/datasets/mexwell/heart-disease-dataset/
-Grade Scores dataset (GS) source: https://www.kaggle.com/datasets/desalegngeb/students-exam-scores/
+Heart Disease dataset (HD) source: https://www.kaggle.com/datasets/mexwell/heart-disease-dataset/ \
+Grade Scores dataset (GS) source: https://www.kaggle.com/datasets/desalegngeb/students-exam-scores/ \
 MNIST dataset source: https://www.kaggle.com/datasets/oddrationale/mnist-in-csv/
 
 ### References
